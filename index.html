@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Filter Me </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <center>
+        <br>
+        <h1 style="font-size: 90px; color: whitesmoke; font-family: cursive;"> Filter Me </h1>
+        <br>
+        <button data-toggle="modal" data-target="#myModal" onclick="snap();" style="border-radius: 100%; font-size: 30px;" class>&nbsp;<i class="fa fa-camera"></i>&nbsp;</button>
+        <br><br>
+        
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center>
+                    <br><br>
+                    <img id="canvasImg" height="350" width="350">
+                    <br><br>
+                    <button style="width:60%;" class="btn btn-success"><a id="downloadLink" download="img.jpg"> Download <i class="glyphicon glyphicon-ok"></i></a></button> 
+                    <br><br> 
+                    <button style="width:60%;" class="btn btn-danger" data-dismiss="modal" > Retake <i class="glyphicon glyphicon-remove"></i></button>        
+                    <br><br>
+                    </center>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        </center>
+    </body>
+</html>

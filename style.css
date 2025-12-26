@@ -1,0 +1,16 @@
+body {
+    background-image: url("pexels-somben-chea-1289363.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+canvas {
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    margin-top: 200px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: white;
+}
